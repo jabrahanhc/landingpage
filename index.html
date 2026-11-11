@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explora rutas de aprendizaje en Python, desarrollo web e inteligencia artificial con Bit a Bit.">
+  <meta name="theme-color" content="#141720">
+  <title>Bit a Bit | Academia de Programación</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="cabecera" id="inicio">
+    <div class="contenedor barra">
+      <a class="marca" href="#inicio" aria-label="Bit a Bit, inicio">
+        <span class="marca-icono" aria-hidden="true">&gt;_</span> bit<span class="marca-acento">a</span>bit<span class="marca-punto" aria-hidden="true">.</span>
+      </a>
+      <button type="button" class="menu-boton" aria-controls="menu" aria-expanded="false" hidden>Menú <span aria-hidden="true">☰</span></button>
+      <nav id="menu" class="menu" aria-label="Navegación principal">
+        <a href="#rutas">Rutas</a>
+        <a href="#metodo">Método</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <a class="enlace-cabecera" href="#rutas">Explorar cursos <span aria-hidden="true">&gt;</span></a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="titulo">
+      <div class="contenedor hero-grid">
+        <div>
+          <p class="eyebrow"><span class="indicador" aria-hidden="true"></span> ACADEMIA DE PROGRAMACIÓN</p>
+          <h1 id="titulo">Aprende a<br>programar<span>.</span><br><em>Crea algo tuyo.</em></h1>
+          <p class="hero-texto">Da tus primeros pasos en Python, desarrollo web e inteligencia artificial con ejercicios prácticos y proyectos que puedes seguir mejorando.</p>
+          <div class="acciones">
+            <a class="boton boton-lima" href="#rutas">Ver rutas de aprendizaje <span aria-hidden="true">&gt;</span></a>
+            <a class="boton boton-fantasma" href="#demo"><span aria-hidden="true">&gt;</span> Probar un ejemplo</a>
+          </div>
+        </div>
+
+        <section class="editor" id="demo" aria-labelledby="archivo-demo">
+          <div class="editor-barra">
+            <div class="ventana" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span id="archivo-demo">hola_mundo.py</span>
+            <span class="lenguaje">PYTHON</span>
+          </div>
+          <div class="editor-codigo">
+            <div class="lineas" aria-hidden="true">1<br>2<br>3<br>4<br>5<br>6</div>
+            <pre><code><span class="comentario"># Tu primer programa</span>
+<span class="clave">def</span> <span class="funcion">saludar</span>(nombre):
+    <span class="clave">return</span> <span class="cadena">f"¡Hola, {nombre}!"</span>
+
+mensaje = <span class="funcion">saludar</span>(<span class="cadena">"mundo"</span>)
+<span class="funcion">print</span>(mensaje)</code></pre>
+          </div>
+          <div class="editor-salida">
+            <div class="salida-barra"><span>CONSOLA</span><button class="ejecutar" type="button" id="ejecutar">Simular salida</button></div>
+            <p id="salida" role="status"><span aria-hidden="true">›</span> Pulsa «Simular salida».</p>
+            <noscript><p>Salida esperada: ¡Hola, mundo!</p></noscript>
+          </div>
+        </section>
+      </div>
+      <div class="contenedor hero-pie"><span>01 / ESCRIBE</span><span>02 / PRUEBA</span><span>03 / MEJORA</span></div>
+    </section>
+
+    <section class="rutas seccion" id="rutas" aria-labelledby="titulo-rutas">
+      <div class="contenedor">
+        <p class="eyebrow etiqueta-oscura">01 / RUTAS DE APRENDIZAJE</p>
+        <div class="seccion-cabecera">
+          <h2 id="titulo-rutas">Elige qué quieres crear</h2>
+          <p>Tres rutas de nivel inicial. Cada una termina con un proyecto para aplicar lo aprendido.</p>
+        </div>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <div class="tarjeta-cabecera"><span class="icono icono-python" aria-hidden="true">Py</span><span class="numero">01</span></div>
+            <h3>Python desde cero</h3>
+            <p>Practica con variables, condiciones, bucles y funciones mientras resuelves problemas sencillos.</p>
+            <details><summary>Ver temario <span aria-hidden="true">+</span></summary><ul><li>Variables, tipos de datos y operaciones.</li><li>Condiciones, bucles y listas.</li><li>Funciones para organizar tu código.</li></ul><p><strong>Proyecto final</strong> · Juego de adivinanzas.</p></details>
+          </article>
+          <article class="tarjeta">
+            <div class="tarjeta-cabecera"><span class="icono icono-web" aria-hidden="true">&lt;/&gt;</span><span class="numero">02</span></div>
+            <h3>Desarrollo web</h3>
+            <p>Construye una página adaptable y añade interacciones con HTML, CSS y JavaScript.</p>
+            <details><summary>Ver temario <span aria-hidden="true">+</span></summary><ul><li>Estructura y contenido con HTML.</li><li>Diseño adaptable con CSS.</li><li>Eventos e interacción con JavaScript.</li></ul><p><strong>Proyecto final</strong> · Landing page personal.</p></details>
+          </article>
+          <article class="tarjeta">
+            <div class="tarjeta-cabecera"><span class="icono icono-ia" aria-hidden="true">✦</span><span class="numero">03</span></div>
+            <h3>IA aplicada</h3>
+            <p>Escribe instrucciones claras, compara respuestas y usa IA como apoyo en una tarea concreta.</p>
+            <details><summary>Ver temario <span aria-hidden="true">+</span></summary><ul><li>Conceptos básicos de IA generativa.</li><li>Instrucciones con contexto y ejemplos.</li><li>Criterios para verificar resultados.</li></ul><p><strong>Proyecto final</strong> · Guía de estudio asistida por IA.</p></details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="metodo seccion" id="metodo" aria-labelledby="titulo-metodo">
+      <div class="contenedor metodo-grid">
+        <div><p class="eyebrow etiqueta-oscura">02 / CÓMO APRENDES</p><h2 id="titulo-metodo">Del ejemplo<br>al proyecto</h2><p>Cada paso añade una habilidad que puedes practicar de inmediato.</p></div>
+        <ol class="pasos">
+          <li><span aria-hidden="true">01</span><div><h3>Entiende el ejemplo</h3><p>Revisa un ejercicio corto y observa qué hace cada parte.</p></div></li>
+          <li><span aria-hidden="true">02</span><div><h3>Cambia una cosa</h3><p>Modifica un dato o una regla y comprueba cómo cambia el resultado.</p></div></li>
+          <li><span aria-hidden="true">03</span><div><h3>Construye tu proyecto</h3><p>Combina lo aprendido y agrega una función que te gustaría usar.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="preguntas seccion" id="preguntas" aria-labelledby="titulo-preguntas">
+      <div class="contenedor preguntas-grid">
+        <div><p class="eyebrow etiqueta-oscura">03 / ANTES DE EMPEZAR</p><h2 id="titulo-preguntas">Preguntas frecuentes</h2></div>
+        <div class="faq">
+          <details><summary>¿Necesito experiencia previa?<span aria-hidden="true">+</span></summary><p>Las tres rutas parten de conceptos básicos. Puedes elegir según el proyecto que más te interese.</p></details>
+          <details><summary>¿Qué necesito para practicar?<span aria-hidden="true">+</span></summary><p>Para desarrollo web, basta un navegador y un editor de texto. Para Python, puedes instalar el intérprete o usar un entorno en línea. Para la ruta de IA, necesitarás acceso a una herramienta de IA generativa.</p></details>
+          <details><summary>¿Qué ruta me conviene para empezar?<span aria-hidden="true">+</span></summary><p>Elige Python si quieres practicar lógica, desarrollo web si quieres crear una página e IA aplicada si quieres aprender a usar y evaluar respuestas generadas por IA.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-grid">
+      <a class="marca" href="#inicio" aria-label="Bit a Bit, inicio"><span class="marca-icono" aria-hidden="true">&gt;_</span> bit<span class="marca-acento">a</span>bit<span class="marca-punto" aria-hidden="true">.</span></a>
+      <p>Academia de Programación · Sitio demostrativo</p>
+      <a href="#inicio">Volver al inicio <span aria-hidden="true">^</span></a>
+    </div>
+  </footer>
+</body>
+</html>
